@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Contracted__c</fullName>
+    <externalId>false</externalId>
+    <label>Status Contracted</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>&quot;Contracted&quot;</fullName>
+                <default>false</default>
+                <label>&quot;Contracted&quot;</label>
+            </value>
+            <value>
+                <fullName>&quot;Uncontracted&quot;</fullName>
+                <default>false</default>
+                <label>&quot;Uncontracted&quot;</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

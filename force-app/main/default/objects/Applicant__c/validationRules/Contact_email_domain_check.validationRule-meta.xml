@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_email_domain_check</fullName>
+    <active>true</active>
+    <errorConditionFormula>REGEX (UPPER ( Customer_Email__c ) ,&quot;^[A-z0-9._%+-/!#$%&amp;&apos;*=?^_`{|}~]+@[A-z0-9.-]+\\.[A-Z]{2,4}$&quot;)</errorConditionFormula>
+    <errorMessage>ERROR FOUND</errorMessage>
+</ValidationRule>

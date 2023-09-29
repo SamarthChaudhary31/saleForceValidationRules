@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_interval_validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>(  Closed_date__c   -  Created_date__c ) &gt; 2</errorConditionFormula>
+    <errorMessage>&quot;The time between Created Date and End Date cannot exceed 48 hours.&quot;</errorMessage>
+</ValidationRule>

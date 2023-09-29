@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Address_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ Billing_Address_Checkbox__c = TRUE,
+  ISBLANK( Billing_Address__c ) ||  ISBLANK( Billing_City__c ) ||  ISBLANK( Billing_Street__c ) 
+
+)</errorConditionFormula>
+    <errorMessage>&quot;Billing address fields must be populated when Billing Address checkbox is checked.&quot;</errorMessage>
+</ValidationRule>

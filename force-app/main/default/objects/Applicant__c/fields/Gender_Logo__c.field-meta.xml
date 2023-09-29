@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gender_Logo__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL( Gender__c ,&apos;Male&apos;) ,
+
+
+
+
+ IMAGE(&apos;https://aryainstituteofengineering5-dev-ed.develop.file.force.com/servlet/servlet.ImageServer?id=0155j00000062CP&amp;oid=00D5j00000ChcVP&amp;lastMod=1693383023000&apos;,&apos;Male&apos;,30,30),
+
+
+
+
+
+ IF( ISPICKVAL( Gender__c ,&apos;Female&apos;) , IMAGE(&apos;https://aryainstituteofengineering5-dev-ed.develop.file.force.com/servlet/servlet.ImageServer?id=0155j00000062CU&amp;oid=00D5j00000ChcVP&amp;lastMod=1693383614000&apos;,&apos;Female&apos;,30,30) ,
+
+
+
+
+
+ IMAGE(&apos;https://aryainstituteofengineering5-dev-ed.develop.file.force.com/servlet/servlet.ImageServer?id=0155j00000062Ce&amp;oid=00D5j00000ChcVP&amp;lastMod=1693385313000&apos;,&apos;Transgender&apos;,30,30)) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Gender Logo</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
